@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Conteneur Titre */
+
+.conteneur {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titre {
+    margin-top: 70px;
+    font-size: 90px;
+}
+
+.par {
+    font-weight: 900;
+    background: linear-gradient(120deg,#7aaddd 0%,#03297a 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.span {
+    background: linear-gradient(120deg,rgb(117, 11, 117) 0%,rgb(117, 11, 117) 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Conteneur Carte Projet */
+
+.conteneur1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: antiquewhite;
+    width: 90%;
+    margin: 100px auto;
+    padding-bottom: 20px;
+}
+
+.par1 {
+    padding-top: 50px;
+    color: rgb(117, 11, 117);
+    font-size: larger;
+}
+
+.contenant1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenant1-1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.carte {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    background-color: white;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.image {
+    width: 300px;
+    max-width: 100%;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.titre_carte {
+    margin: 30px 0px 30px 0px;
+}
+
+.lien {
+    text-decoration: none;
+}
+
+/* Footer */
+
+h6 {
+    color: white !important;
+}
+
+
+/* Responsive Design */
+
+
+@media all and (max-width: 767px) {
+
+    /* Conteneur Titre */
+
+    .conteneur {
+        max-width: 100%;
+    }
+
+    .titre {
+        font-size: 50px;
+    }
+
+    .par {
+        margin-left: 30px;
+    }
+
+    /* Conteneur Carte Projet */
+
+    .conteneur1 {
+        max-width: 100%;
+    }
+
+    .par1 {
+        max-width: 100%;
+    }
+
+    .contenant1-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .carte {
+        margin: 0 auto;
+        width: 90%;
+        margin-bottom: 30px;
+    }
+}
+
+@media all and (max-width: 1200px) {
+    
+    /* Conteneur Titre */
+
+    .par {
+        margin-left: 30px;
+    }
+
+    /* Conteneur Carte Projet */
+
+    .titre_carte {
+        font-size: large;
+    }
+
+}
